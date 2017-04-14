@@ -1,0 +1,154 @@
+
+scene:
+
+1.   background image/video
+
+2. 	 open page:  (racer game - css class hidden)
+
+3.  hamburger - on click event
+	- play persian music clip
+	- open horizontal menu bar
+
+	
+
+4.  menu - on click event
+	- open game
+	- berber cry clip.
+
+
+
+
+
+on("click") background dark, circle shakes, sound of die, background transition clear to reveal p1 roll.  repeat p2.
+
+persian divinity dice: 
+ on mouseover .show text box with description.
+
+
+
+
+
+
+Functions:
+create an array of roll Num.  
+
+$$$$ eg. longest common prefix:
+
+for()
+
+for 
+group any === die Num of-a-kind ("OAK").
+return OAK Quant and Num.(
+	(e.g. p1 3 4's & 2 6's.)
+
+var compareOAKQuant = function() {
+        if (p1OAKQuant > p2OAKQuant) {
+            $("#winnerMessage").text("Player one wins!");
+        } else if (p1OAKQuant === p2OAKQuant) { //method...?
+            var compareOAKNum = function() {
+                    if (p1OAKNum > p2OAKNum) {
+                        $("#winnerMessage").text("Player one wins!");
+                    } else if (p1OAKNum === p2OAKNum) {
+                        $("#winnerMessage").text("Tie! Re-roll please.");
+                    } else {
+                        $("#winnerMessage").text("Player two wins!");
+                        //   }
+
+                        //   };
+
+	
+-- coorolate die# with image.
+
+
+
+* * * * * *
+FULL VERSION:
+may be played with unlimited number of players
+each player has 5 dice;
+6's are high, 1's are wild;
+only "of-a-kind" are scored; (greater number of a kind beats higher value cards(e.g. 3,3,3 beats 4,4));
+if a tie, all players re-roll;
+three rounds per elimination;
+roller with highest "of-a-kind" is eliminated (a win);
+last remaining player pays for lunch;
+* * * * * *
+
+
+SIMPLIFIED VERSION:
+two players
+each player has five dice;
+players roll dice simultaneously;
+a function sums each player's dice and compares the player's sums
+the player whose dice have the highest sum exits the round;
+the remaining player has to pay for lunch.
+* * * * * *
+
+PSEUDOCODE:
+
+dice:
+randomInt(upto) {    }
+createRolls(numDice){[...]}
+
+
+
+Sum:
+function whichIsHigher(rolls1, rolls2) {
+	return true (if roll1 > roll2)
+	else 
+	return false
+}
+
+
+
+var longestCommonPrefixOfTwoWords(word1, word2) {
+	var longestPrefix = "";
+
+	longesPrefix = longestCommonPrefixOfTwoWords(longestPrefix, word2);
+	longesPrefix = longestCommonPrefixOfTwoWords(longestPrefix, word3);
+	longesPrefix = longestCommonPrefixOfTwoWords(longestPrefix, word4);
+	longesPrefix = longestCommonPrefixOfTwoWords(longestPrefix, word5);} 
+
+var smallerLength = Math.min(word1.length, word2.length);
+
+for (var i = 0; i < smallerLength; i++) {
+	if (word2[i] == word2[i]) {
+	longestPrefix += word1[i];
+	} else {
+	break;
+	}
+}
+
+
+
+
+
+
+Math.random magic 8 ball button.
+
+function 8ball (max) {
+	return Math.floor(Math.random() * 20) + 1;
+}
+var 1 = Don't count on it 
+var 2 = My reply is no
+var 3 = My sources say no
+var 4 = Outlook not so good
+var 5 = Very doubtful
+var 6 = It is certain
+var 7 = It is decidedly so
+var 8 = Without a doubt
+var 9 = Yes definitely
+var 10 = You may rely on it
+var 11 = As I see it, yes
+var 12 = Most likely
+var 13 = Outlook good
+var 14 = Yes
+var 15 = Signs point to yes
+var 16 = Reply hazy try again
+var 17 = Ask again later
+var 18 = Better not tell you now
+var 19 = Cannot predict now
+var 20 = Concentrate and ask again
+
+
+
+
