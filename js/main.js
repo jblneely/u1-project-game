@@ -3,19 +3,22 @@ function onPageLoad() {
     console.log("player one button clicked");
     $("#playerTwoRollButton").on("click", playerTwoRollDice).hide(); //change to key up
     console.log("player two button clicked");
-    // $("#eightball").on("mouseenter", eightBall).fadeIn(500);
-    // console.log("eightBall mouseenter");
-    // $("#eightball").on("mouseleave", eightBall).fadeOut(500);
-    // console.log("eightBall mouseleave");
+    // $("#geomancer").on("mouseenter", geomancer).fadeIn(500);
+    // console.log("geomancer mouseenter");
+    // $("#geomancer").on("mouseleave", geomancer).fadeOut(500);
+    // console.log("geomancer mouseleave");
+
 
 }
 $(onPageLoad);
 
 
-// function onHamburgerClicked() {
-//     console.log("clicked");
+
+
+// function menu() {
+//     console.log("menu");
 // }
-//      document.addEventListener("DOMContentLoaded", function() {
+//     document.addEventListener("DOMContentLoaded", function() {
 //     var hamburgerMenu = document.getElementById(".hamburger");
 //     console.log(startButton);
 //     hamburgerMenu.addEventListener("click", function() {
@@ -39,8 +42,6 @@ var p2Sum;
 var p1Array;
 var p2Array;
 
-
-
 function playerOneRollDice() {
     var die1 = $("#die1");
     var die2 = $("#die2");
@@ -63,7 +64,7 @@ function playerOneRollDice() {
     die4.addClass("d" + d4);
     die5.addClass("d" + d5);
 
-    $("#player1Sum").html("Player one rolled " + p1Sum + ".");
+    $("#player1Sum").html("FIRST PLAYER ROLLED " + p1Sum + ".");
     $("#playerTwoRollButton").show();
     $("#playerOneRollButton").hide();
 
@@ -90,9 +91,9 @@ function playerTwoRollDice() {
     die7.addClass("d" + d7);
     die8.addClass("d" + d8);
     die9.addClass("d" + d9);
-    die10.addClass("d" + 10);
+    die10.addClass("d" + d10);
 
-    $("#player2Sum").html("Player two rolled " + p2Sum + ".");
+    $("#player2Sum").html("SECOND PLAYER ROLLED " + p2Sum + ".");
     $("#playerTwoRollButton").hide();
     compareSums();
 }
@@ -100,11 +101,11 @@ function playerTwoRollDice() {
 function compareSums() {
     $("#winnerMessage").hide()
     if (p1Sum > p2Sum) {
-        $("#winnerMessage").text("Player two wins!");
+        $("#winnerMessage").text("PLAYER ONE IS THE HIGHROLLER");
     } else if (p1Sum === p2Sum) {
         $("#winnerMessage").text("Tie!  Re-roll please.");
     } else {
-        $("#winnerMessage").text("Player one wins");
+        $("#winnerMessage").text("PLAYER TWO IS THE HIGHROLLER");
     }
     $("#winnerMessage").fadeIn(1500);
 }
@@ -125,73 +126,73 @@ function compareSums() {
 // console.log('5 has ' + ofAKind[5] + ' occurrences');
 
 
-//-----------------EIGHTBALL LOGIC ------------------
-// var randomNumberEightBall = Math.floor(Math.random() * 20);
+//-----------------geomancer LOGIC ------------------
+// var randomNumbergeomancer = Math.floor(Math.random() * 20);
 
-// function eightBall = '';
-// switch (randomNumberEightBall) {
+// function geomancer = '';
+// switch (randomNumbergeomancer) {
 //     case 0:
-//         eightBall = 'Do not count on it';
+//         geomancer = 'Do not count on it';
 //         break;
 //     case 1:
-//         eightBall = 'My reply is no';
+//         geomancer = 'My reply is no';
 //         break;
 //     case 2:
-//         eightBall = 'My sources say no';
+//         geomancer = 'My sources say no';
 //         break;
 //     case 3:
-//         eightBall = 'Outlook not so good';
+//         geomancer = 'Outlook not so good';
 //         break;
 //     case 4:
-//         eightBall = 'Very doubtful';
+//         geomancer = 'Very doubtful';
 //         break;
 //     case 5:
-//         eightBall = 'It is certain';
+//         geomancer = 'It is certain';
 //         break;
 //     case 6:
-//         eightBall = 'It is decidedly so';
+//         geomancer = 'It is decidedly so';
 //         break;
 //     case 7:
-//         eightBall = 'Without a doubt';
+//         geomancer = 'Without a doubt';
 //         break;
 //     case 8:
-//         eightBall = 'Yes definitely';
+//         geomancer = 'Yes definitely';
 //         break;
 //     case 9:
-//         eightBall = 'You may rely on it';
+//         geomancer = 'You may rely on it';
 //         break;
 //     case 10:
-//         eightBall = 'As I see it, yes';
+//         geomancer = 'As I see it, yes';
 //         break;
 //     case 11:
-//         eightBall = 'Most likely';
+//         geomancer = 'Most likely';
 //         break;
 //     case 12:
-//         eightBall = 'Outlook good';
+//         geomancer = 'Outlook good';
 //         break;
 //     case 13:
-//         eightBall = 'Yes';
+//         geomancer = 'Yes';
 //         break;
 //     case 14:
-//         eightBall = 'Signs point to yes';
+//         geomancer = 'Signs point to yes';
 //         break;
 //     case 15:
-//         eightBall = 'Reply hazy try again';
+//         geomancer = 'Reply hazy try again';
 //         break;
 //     case 16:
-//         eightBall = 'Ask again later';
+//         geomancer = 'Ask again later';
 //         break;
 //     case 17:
-//         eightBall = 'Better not tell you now';ß
+//         geomancer = 'Better not tell you now';ß
 //         break;
 //     case 18:
-//         eightBall = 'Cannot predict now';
+//         geomancer = 'Cannot predict now';
 //         break;
 //     case 19:
-//         eightBall = 'Signs point to yes';
+//         geomancer = 'Signs point to yes';
 //         break;
 //     case 20:
-//         eightBall = 'Concentrate and ask again';
+//         geomancer = 'Concentrate and ask again';
 //         break;
 // }
 

@@ -1,21 +1,52 @@
 
-scene:
+TO DO:
 
 1.   background image/video
 
 2. 	 open page:  (racer game - css class hidden)
 
-3.  hamburger - on click event
-	- play persian music clip
-	- open horizontal menu bar
 
-	
+
+3.  fontAwesome & nav:
+		icon, white/black - white turns blue on mouseenter/back on leave.
+		navicon/windowclose: eventListener on click
+			hide navicon/unhide wc:  unhide UL/LIS
+			hide wd/ unhide navicon: hide UL/LIS
+		soundicon on/off: mediacall
+			on touch mobile
+			on click large screen
+
+3.9  menu - addeventlistener: 
+	LI heighten opacity on RGBA on mouseenter and mouseleave
 
 4.  menu - on click event
-	- open game
-	- berber cry clip.
+	- open game - ululation clip;
+		- text box for terms
+		- form for initials
+			-- valication before roll.
+		- drop down options:
+			-- low score buys lunch
+			-- high score cuts, low score picks
+		-- use JS to write winning statemeent strings.
+
+	- open divination/geomancy - persian clip
+		- image of geomancers, text, and divinity dice;
+		- click on central button for answer.
 
 
+5.  text transition: JS fadein fadeout.
+		"if you can meet with triumph and disaster and treat both impostors just the same ..."
+
+		"if you can make one heap of all your winnings and risk it all on one turn of pitch and toss, and loose and start all over at your beginings and never breathe one word about your loss..."
+				-Rudyard Kipling
+
+6.		Chaotic system determinism through dice. 
+
+6.1		carousel on html background images.
+
+7. 	Weather API - scrolling weather carousel: or remy weatherman.
+
+8.  camera icon = take pic of wagerers, outcome, and store to account/social media.
 
 
 
@@ -81,6 +112,8 @@ players roll dice simultaneously;
 a function sums each player's dice and compares the player's sums
 the player whose dice have the highest sum exits the round;
 the remaining player has to pay for lunch.
+
+if more than one player - use math.random to divide the group of players into two groups.
 * * * * * *
 
 PSEUDOCODE:
@@ -148,6 +181,40 @@ var 17 = Ask again later
 var 18 = Better not tell you now
 var 19 = Cannot predict now
 var 20 = Concentrate and ask again
+
+
+
+jourrnal:
+4-14-17
+Reno helped me create svg files for the dice.
+connor had me watch video on JS rather than do leet code exercises
+reno discussed haveing "game modes" for the game- putting all your code for one of several games into a function.  But someone erased it before I was able to take it down.
+after troubleshooting I asked Connor to look at my font awesome - he said google it.  it is easier to restart than figure out what you did wrong.
+
+
+4-15-17
+working on FA icon placement 20/20/20/20//(getbeebox)
+working on FA icon hide/unhide and audio 20/20/20/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
