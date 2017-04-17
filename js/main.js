@@ -1,36 +1,62 @@
 function onPageLoad() {
-    $("#playerOneRollButton").on("click", playerOneRollDice); //change to key up
+    $("#playerOneRollButton").on("click", playerOneRollDice);
     console.log("player one button clicked");
-    $("#playerTwoRollButton").on("click", playerTwoRollDice).hide(); //change to key up
+    $("#playerTwoRollButton").on("click", playerTwoRollDice).hide();
     console.log("player two button clicked");
-    // $("#geomancer").on("mouseenter", geomancer).fadeIn(500);
-    // console.log("geomancer mouseenter");
-    // $("#geomancer").on("mouseleave", geomancer).fadeOut(500);
-    // console.log("geomancer mouseleave");
+
 
 
 }
 $(onPageLoad);
+//icons//
+// var menu = document.getElementById("menu");
+// var menuClose = document.getElementById("windowclose");
+// var soundOn = document.getElementById("volumeon");
+// var soundOff = document.getElementById("volumeoff");
+// //ul//
+// var menuList = document.getElementById("menuList");
+// //li//
+// var highroller = document.getElementById("dicegame");
+// var advice = document.getElementById("advice");
+// var about = document.getElementById("if");
+// //soundclips//
+// var homeAudio = document.getElementById("gnawaAudio");
+// var highrollerButtonAudio = document.getElementById("ululationAudio");
+// var rollButtonAudio = document.getElementById("diceRoll");
+// var buttonAudio = document.getElementById("persianAudio1");
+
+
+// $('#menu').on('click', function() {
+//   $('#menu').html('Elvis has entered the building!');
+//   $('img').fadeIn(350);
+// });
 
 
 
 
-// function menu() {
-//     console.log("menu");
+// $('button').on('mouseleave', function() {
+//   $('p').html('Elvis has left the building!');
+//   $('img').fadeOut(350);
+// });
+
+// function changeBackgroundColorToWhite(){
+// document.querySelector('input').style.backgroundColor = 'blue'; color = 'white';
 // }
-//     document.addEventListener("DOMContentLoaded", function() {
-//     var hamburgerMenu = document.getElementById(".hamburger");
-//     console.log(startButton);
-//     hamburgerMenu.addEventListener("click", function() {
-//         gameStarted = true;
-//         console.log('clicked!')
-//         var startMenu = document.getElementById("start-menu");
-//         var game = document.getElementById("game");
 
-//         startMenu.classList.add("hidden");
-//         game.classList.remove("hidden");
+// menu.addEventListener("click", function() {
+//     menu.classlist.add("hidden");
+//     menuClose.classlist.remove("hidden");
+//     menuList.classlist.remove("hidden");
+// });
 
-//     });
+// menuClose.addEventListener("click", function() {
+//     menu.classlist.remove("hidden");
+//     menuClose.classlist.add("hidden");
+//     menuList.classlist.add("hidden");
+// });
+
+
+
 
 function getRandomNumberUpTo(max) {
     return Math.floor(Math.random() * 6) + 1;
@@ -110,7 +136,17 @@ function compareSums() {
     $("#winnerMessage").fadeIn(1500);
 }
 
+$('#menu').on('click', function() {
+    $('#menu').addClass('hidden');
+    $('#menuClose').removeClass('hidden');
+    $('#menuList').removeClass('hidden');
+});
 
+$('#menuClose').on('click', function() {
+            $('#menuClose').addClass('hidden');
+            $('#menu').removeClass('hidden');
+
+});
 //--------OF A KIND LOGIC - PUT THIS IN A FUNCTION ----------
 
 // var ofAKind = new Object;
@@ -196,12 +232,6 @@ function compareSums() {
 //         break;
 // }
 
-
-
-// function BestOfAKind() {
-//     p1Array.sort();
-
-// }
 
 
 
