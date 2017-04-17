@@ -25,24 +25,6 @@ $(onPageLoad);
 // var rollButtonAudio = document.getElementById("diceRoll");
 // var buttonAudio = document.getElementById("persianAudio1");
 
-
-// $('#menu').on('click', function() {
-//   $('#menu').html('Elvis has entered the building!');
-//   $('img').fadeIn(350);
-// });
-
-
-
-
-// $('button').on('mouseleave', function() {
-//   $('p').html('Elvis has left the building!');
-//   $('img').fadeOut(350);
-// });
-
-// function changeBackgroundColorToWhite(){
-// document.querySelector('input').style.backgroundColor = 'blue'; color = 'white';
-// }
-
 // menu.addEventListener("click", function() {
 //     menu.classlist.add("hidden");
 //     menuClose.classlist.remove("hidden");
@@ -55,9 +37,15 @@ $(onPageLoad);
 //     menuList.classlist.add("hidden");
 // });
 
+//carousel//
+$(function() {
+    $("html").slick({
+        dots: true,
+        centerMode: true
+    });
+});
 
-
-
+//dice//
 function getRandomNumberUpTo(max) {
     return Math.floor(Math.random() * 6) + 1;
 }
@@ -137,14 +125,15 @@ function compareSums() {
 }
 
 $('#menu').on('click', function() {
-    $('#menu').addClass('hidden');
-    $('#menuClose').removeClass('hidden');
-    $('#menuList').removeClass('hidden');
+    $('#menu').hide();
+    $('#menuClose').show();
+    $('#menuList').show();
 });
 
 $('#menuClose').on('click', function() {
-            $('#menuClose').addClass('hidden');
-            $('#menu').removeClass('hidden');
+    $('#menuClose').hide();
+    $('#menu').show();
+    $('#menuList').show();
 
 });
 //--------OF A KIND LOGIC - PUT THIS IN A FUNCTION ----------
