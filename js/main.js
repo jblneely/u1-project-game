@@ -128,14 +128,14 @@ $('#diceGame').on('click', function() {
     $('#ululationAudio').play();
     event.preventDefault();
 });
-$('#playerOneRollButton').on('click', function() {
-    $('#diceRoll').play();
-    event.preventDefault();
-});
-$('#playerTwoRollButton').on('click', function() {
-    $('#diceRoll').play();
-    event.preventDefault();
-});
+// $('#playerOneRollButton').on('click', function() {
+//     $('#diceRoll').play();
+//     event.preventDefault();
+// });
+// $('#playerTwoRollButton').on('click', function() {
+//     $('#diceRoll').play();
+//     event.preventDefault();
+// });
 $('#about').on('click', function() {
     $('#menu').hide();
     $('#carousel').show();
