@@ -6,6 +6,30 @@ function onPageLoad() {
 
 }
 $(onPageLoad);
+//icons//
+// var menu = document.getElementById("menu");
+// var menuClose = document.getElementById("windowclose");
+// var soundOn = document.getElementById("volumeon");
+// var soundOff = document.getElementById("volumeoff");
+// //ul//
+// var menuList = document.getElementById("menuList");
+// //li//
+// var highroller = document.getElementById("dicegame");
+// var advice = document.getElementById("advice");
+// var about = document.getElementById("if");
+
+// menu.addEventListener("click", function() {
+//     menu.classlist.add("hidden");
+//     menuClose.classlist.remove("hidden");
+//     menuList.classlist.remove("hidden");
+// });
+
+// menuClose.addEventListener("click", function() {
+//     menu.classlist.remove("hidden");
+//     menuClose.classlist.add("hidden");
+//     menuList.classlist.add("hidden");
+// });
+
 
 // function onHamburgerClicked() {
 //     console.log("clicked");
@@ -106,6 +130,97 @@ var compareSums = function() {
 };
 
 
+//--------OF A KIND LOGIC - PUT THIS IN A FUNCTION ----------
+
+// var ofAKind = new Object;
+// for (var i = 0; i < p1Array.length; i++) {
+//     var number = p1Array[i];
+//     console.log(number)
+//     if (ofAKind[number] === undefined) {
+//         ofAKind[number] = 0;
+//     }
+//     ofAKind[number] += 1;
+// }
+// console.log(ofAKind);
+// console.log('5 has ' + ofAKind[5] + ' occurrences');
+
+
+//-----------------geomancer LOGIC ------------------
+// var randomNumbergeomancer = Math.floor(Math.random() * 20);
+
+// function geomancer = '';
+// switch (randomNumbergeomancer) {
+//     case 0:
+//         geomancer = 'Do not count on it';
+//         break;
+//     case 1:
+//         geomancer = 'My reply is no';
+//         break;
+//     case 2:
+//         geomancer = 'My sources say no';
+//         break;
+//     case 3:
+//         geomancer = 'Outlook not so good';
+//         break;
+//     case 4:
+//         geomancer = 'Very doubtful';
+//         break;
+//     case 5:
+//         geomancer = 'It is certain';
+//         break;
+//     case 6:
+//         geomancer = 'It is decidedly so';
+//         break;
+//     case 7:
+//         geomancer = 'Without a doubt';
+//         break;
+//     case 8:
+//         geomancer = 'Yes definitely';
+//         break;
+//     case 9:
+//         geomancer = 'You may rely on it';
+//         break;
+//     case 10:
+//         geomancer = 'As I see it, yes';
+//         break;
+//     case 11:
+//         geomancer = 'Most likely';
+//         break;
+//     case 12:
+//         geomancer = 'Outlook good';
+//         break;
+//     case 13:
+//         geomancer = 'Yes';
+//         break;
+//     case 14:
+//         geomancer = 'Signs point to yes';
+//         break;
+//     case 15:
+//         geomancer = 'Reply hazy try again';
+//         break;
+//     case 16:
+//         geomancer = 'Ask again later';
+//         break;
+//     case 17:
+//         geomancer = 'Better not tell you now';ß
+//         break;
+//     case 18:
+//         geomancer = 'Cannot predict now';
+//         break;
+//     case 19:
+//         geomancer = 'Signs point to yes';
+//         break;
+//     case 20:
+//         geomancer = 'Concentrate and ask again';
+//         break;
+// }
+
+
+
+
+// var resetButton = document.getElementById("resetButton") {
+//     $("#resetButton").on("click").location.reload("body");
+// };
 
 
 // var resetButton = document.getElementById("resetButton") {
