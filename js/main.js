@@ -20,10 +20,10 @@ $(onPageLoad);
 // var advice = document.getElementById("advice");
 // var about = document.getElementById("if");
 // //soundclips//
-// var homeAudio = document.getElementById("gnawaAudio");
-// var highrollerButtonAudio = document.getElementById("ululationAudio");
-// var rollButtonAudio = document.getElementById("diceRoll");
-// var buttonAudio = document.getElementById("persianAudio1");
+var homeAudio = document.getElementById("gnawaAudio");
+var highrollerButtonAudio = document.getElementById("ululationAudio");
+var rollButtonAudio = document.getElementById("diceRoll");
+var buttonAudio = document.getElementById("persianAudio1");
 
 // menu.addEventListener("click", function() {
 //     menu.classlist.add("hidden");
@@ -37,18 +37,13 @@ $(onPageLoad);
 //     menuList.classlist.add("hidden");
 // });
 
-//carousel//
-$(function() {
-    $("html").slick({
-        dots: true,
-        centerMode: true
-    });
-});
-
 //dice//
 function getRandomNumberUpTo(max) {
     return Math.floor(Math.random() * 6) + 1;
 }
+
+var p1Name = $('#p1name').val();
+var p2Name = $('#p2name').val();
 
 var p1Sum;
 var p2Sum;
@@ -78,7 +73,7 @@ function playerOneRollDice() {
     die4.addClass("d" + d4);
     die5.addClass("d" + d5);
 
-    $("#player1Sum").html("FIRST PLAYER ROLLED " + p1Sum + ".");
+    $("#player1Sum").html("PLAYER ONE ROLLED " + p1Sum + ".");
     $("#playerTwoRollButton").show();
     $("#playerOneRollButton").hide();
 
@@ -107,13 +102,13 @@ function playerTwoRollDice() {
     die9.addClass("d" + d9);
     die10.addClass("d" + d10);
 
-    $("#player2Sum").html("SECOND PLAYER ROLLED " + p2Sum + ".");
+    $("#player2Sum").html("PLAYER TWO ROLLED " + p2Sum + ".");
     $("#playerTwoRollButton").hide();
     compareSums();
 }
 
 function compareSums() {
-    $("#winnerMessage").hide()
+    $("#winnerMessage").hide();
     if (p1Sum > p2Sum) {
         $("#winnerMessage").text("PLAYER ONE IS THE HIGHROLLER");
     } else if (p1Sum === p2Sum) {
@@ -128,14 +123,41 @@ $('#menu').on('click', function() {
     $('#menu').hide();
     $('#menuClose').show();
     $('#menuList').show();
+    event.preventDefault();
 });
-
 $('#menuClose').on('click', function() {
     $('#menuClose').hide();
     $('#menu').show();
-    $('#menuList').show();
+    $('#menuList').hide();
+    $('#highroller').hide();
+    $('#advice').hide();
+    $('#about').hide();
+    event.preventDefault();
 
 });
+
+$('#diceGame').on('click', function() {
+    $('#menuList').hide();
+    $('#highroller').show();
+    $('#socialMedia').hide();
+    $('#highrollerButtonAudio').play();
+    event.preventDefault();
+});
+
+$('#advice').on('click', function() {
+    $('#menu').hide();
+    $('#menuClose').show();
+    $('#menuList').show();
+    event.preventdefault();
+});
+$('#about').on('click', function() {
+    $('#menuList').hide();
+    $('#carousel').show();
+    $('#socialMedia').hide();
+    event.preventdefault();
+});
+
+
 //--------OF A KIND LOGIC - PUT THIS IN A FUNCTION ----------
 
 // var ofAKind = new Object;
