@@ -91,7 +91,7 @@ function compareSums() {
 $('#soundOn').on('click', function() {
     $('#soundOn').hide();
     $('soundOff').show();
-    $('#gnawaAudio').play();
+    $('#gnawaAudio')[0].play();
     event.preventDefault();
 
 });
@@ -125,7 +125,7 @@ $('#diceGame').on('click', function() {
     $('#highroller').show();
     $('#socialMedia').hide();
     $('#gnawaAudio').pause();
-    $('#ululationAudio').play();
+    $('#ululationAudio')[0].play();
     event.preventDefault();
 });
 // $('#playerOneRollButton').on('click', function() {
