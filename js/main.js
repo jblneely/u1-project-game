@@ -98,7 +98,7 @@ $('#soundOn').on('click', function() {
 $('#soundOff').on('click', function() {
     $('soundOff').hide();
     $('soundOn').show();
-    $('#gnawaAudio').pause();
+    $('#gnawaAudio')[0].pause();
     event.preventDefault();
 });
 
@@ -106,7 +106,7 @@ $('#menu').on('click', function() {
     $('#menu').hide();
     $('#menuClose').show();
     $('#menuList').show();
-    // $('#gnawaAudio').play();
+    $('#gnawaAudio')[0].play();
     event.preventDefault();
 });
 $('#menuClose').on('click', function() {
@@ -124,25 +124,25 @@ $('#diceGame').on('click', function() {
     $('#menuList').hide();
     $('#highroller').show();
     $('#socialMedia').hide();
-    $('#gnawaAudio').pause();
+    $('#gnawaAudio')[0].pause();
     $('#ululationAudio')[0].play();
     event.preventDefault();
 });
-// $('#playerOneRollButton').on('click', function() {
-//     $('#diceRoll').play();
-//     event.preventDefault();
-// });
-// $('#playerTwoRollButton').on('click', function() {
-//     $('#diceRoll').play();
-//     event.preventDefault();
-// });
+$('#playerOneRollButton').on('click', function() {
+    $('#diceRoll')[0].play();
+    event.preventDefault();
+});
+$('#playerTwoRollButton').on('click', function() {
+    $('#diceRoll')[0].play();
+    event.preventDefault();
+});
 $('#about').on('click', function() {
     $('#menu').hide();
     $('#carousel').show();
     $(".single-item").slick();
     $('#menuList').hide();
     $('#socialMedia').hide();
-    $('#gnawaAudio').pause();
-    $('#persianAudio1').play();
-    event.preventdefault();
+    $('#gnawaAudio')[0].pause();
+    $('#persianAudio1')[0].play();
+    event.preventDefault();
 });
